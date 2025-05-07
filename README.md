@@ -4,23 +4,22 @@ A crude tool to create the file ScriptSyntax.xml for opensimulator.
 
 Does require dotnet 8.0
 
-It will read the information from the Opensimulator sources.
-
-so you need to provide the path to those sources, and and optionaly provide a folder for the output
+It will read the information from the Opensimulator sources.  
+so you need to provide the path to those sources, and and optionaly provide a folder for the output  
 
 #Building
 
-to build do 
-dotnet build --configuration Debug GenSriptSyntax.sln
+to build do  
+  _dotnet build --configuration Debug GenSriptSyntax.sln_
 
 #Running
 
-change to bin folder and do
+change to bin folder and do  
 
-  GenScriptSyntax PathToSource [outputPath]
+  _GenScriptSyntax PathToSource [outputPath]_
   
-or on linux
+or on linux  
 
-   dotnet GenScriptSyntax.dll PathToSource [outputPath]
-   
+   _dotnet GenScriptSyntax.dll PathToSource [outputPath]_
+
 if you do not provide a output path, ScriptSyntax.xml will be written on same bin folder

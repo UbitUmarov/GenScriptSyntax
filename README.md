@@ -10,16 +10,16 @@ so you need to provide the path to those sources, and and optionaly provide a fo
 #Building
 
 to build do  
- `dotnet build --configuration Debug GenSriptSyntax.sln
+ `dotnet build --configuration Debug GenSriptSyntax.sln`
 
 #Running
 
 change to bin folder and do  
 
-`GenScriptSyntax PathToSource [outputPath]
+`GenScriptSyntax PathToSource [outputPath]`
   
 or on linux  
 
-`dotnet GenScriptSyntax.dll PathToSource [outputPath]
+`dotnet GenScriptSyntax.dll PathToSource [outputPath]`
 
 if you do not provide a output path, ScriptSyntax.xml will be written on same bin folder

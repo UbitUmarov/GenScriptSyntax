@@ -32,8 +32,6 @@
         <OutputPath>bin\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-      <None Update="ScriptSyntaxBase.xml">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      <None Remove="ScriptSyntaxBase.xml" />
     </ItemGroup>
 </Project>

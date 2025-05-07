@@ -124,7 +124,7 @@ namespace GenScriptSyntax
 
             try
             {
-                using StreamReader sr = File.OpenText("ScriptSyntaxBase.xml");
+                using StreamReader sr = File.OpenText(Path.Combine("..","ScriptSyntaxBase.xml"));
                 string s;
                 while ((s = sr.ReadLine()) != null)
                 {

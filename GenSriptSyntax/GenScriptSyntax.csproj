@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <OutputType>exe</OutputType>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AssemblyTitle>GenSriptSintaxe</AssemblyTitle>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Product>GenSriptSintaxe</Product>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <Deterministic>true</Deterministic>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <WarningLevel>0</WarningLevel>
+        <Optimize>True</Optimize>
+        <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
+        <UseCommonOutputDirectory>True</UseCommonOutputDirectory>
+        <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>False</AppendRuntimeIdentifierToOutputPath>
+        <OutputPath>bin\</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <Optimize>False</Optimize>
+        <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
+        <UseCommonOutputDirectory>True</UseCommonOutputDirectory>
+        <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>False</AppendRuntimeIdentifierToOutputPath>
+        <OutputPath>bin\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Update="ScriptSyntaxBase.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+</Project>

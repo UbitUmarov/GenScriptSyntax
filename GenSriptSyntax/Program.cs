@@ -84,18 +84,18 @@ namespace GenScriptSyntax
                     System.Environment.Exit(-1);
                 }
 
-                OpensimBase= Path.Combine([OpensimBase,"Opensim","Region","ScriptEngine","Shared","Api"]);
+                OpensimBase= Path.Combine([OpensimBase,"OpenSim","Region","ScriptEngine","Shared","Api"]);
                 OpensimInterfacePath = Path.Combine(OpensimBase,"Interface");
 
                 OpensimRuntimePath = Path.Combine(OpensimBase,"Runtime");
 
-                if (args.Length > 2)
+                if (args.Length == 2)
                 {
                     outputPath = args[1];
                     Console.WriteLine("Writing output to " + outputPath);
                     if (!Path.Exists(outputPath))
                     {
-                        Console.WriteLine("Could not output folder");
+                        Console.WriteLine("Could not find output folder");
                         System.Environment.Exit(-1);
                     }
                 }
@@ -117,7 +117,7 @@ namespace GenScriptSyntax
             Console.WriteLine("Looking for interface source files in " + OpensimInterfacePath);
 
             if(outputPath.Length > 0)
-                Console.WriteLine("will write to folder " + outputPath);
+                Console.WriteLine("Will write to folder " + outputPath);
 
             StringBuilder sb = new(400000);
             sb.Append("<llsd><map><key>llsd-lsl-syntax-version</key><integer>2</integer>\n");
